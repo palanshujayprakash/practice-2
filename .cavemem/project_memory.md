@@ -3,6 +3,7 @@
 ## Project Overview
 Offline Billing / POS App for Indian retail (Kirana, Medical, Mobile, Garments).
 Tech stack: Streamlit, SQLite (sqlite3), ReportLab, openpyxl, pandas, Plotly, pywebview, PyInstaller.
+Repository: https://github.com/palanshujayprakash/practice-2
 
 ## Core Architectural Decisions
 - Currency math: All prices/amounts stored as **integer paise** (`10050` = `₹100.50`). Never float.
