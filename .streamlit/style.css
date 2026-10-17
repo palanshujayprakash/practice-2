@@ -1,0 +1,92 @@
+/* Modern Professional Desktop POS Styling */
+
+/* Hide Streamlit branding, header decoration, and footer */
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+div[data-testid="stDecoration"] {display: none;}
+div[data-testid="stToolbar"] {visibility: hidden; display: none;}
+
+/* Desktop Layout Density */
+.block-container {
+    padding-top: 1.5rem !important;
+    padding-bottom: 2rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    max-width: 98% !important;
+}
+
+/* Metric Card Design */
+.pos-metric-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.pos-metric-card:hover {
+    border-color: rgba(37, 99, 235, 0.5);
+    transform: translateY(-1px);
+}
+
+.pos-metric-title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+}
+
+.pos-metric-value {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #F8FAFC;
+    letter-spacing: -0.02em;
+}
+
+.pos-metric-sub {
+    font-size: 0.75rem;
+    color: #38BDF8;
+    margin-top: 0.25rem;
+}
+
+/* Custom Alert Badges */
+.badge-danger {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #F87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-success {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #4ADE80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Button & Form refinements */
+div.stButton > button {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+div.stButton > button:hover {
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+}
+
+/* Compact Sidebar */
+section[data-testid="stSidebar"] {
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
